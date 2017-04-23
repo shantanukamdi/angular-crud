@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Products</h4>
+        </div>
+        <div class="col-lg-6">
+            <button class="pull-right" type="button" md-raised-button (click)="openModal();">+Add Product</button>
+        </div>
+    </div>
+    <hr>
+
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Categories</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let product of products">
+                <td>{{product.name}}</td>
+                <td>{{product.price | currency: symbolDisplay: true }}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
