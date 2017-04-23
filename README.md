@@ -1,5 +1,5 @@
 ## Angular Crud 
-This is a sample crud project for learning purpose to get started with Angular JS
+This is a sample crud project for learning purpose to get started with Angular JS and Material Design
 
 ## Steps to run the project
 1. Clone the repo.
